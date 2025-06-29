@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Users, Calendar } from 'lucide-react';
+import { Calendar } from 'lucide-react';
 
 const ClassCard = ({ classInfo }: { classInfo: WellnessClass }) => (
   <Card className="flex flex-col overflow-hidden transition-shadow duration-300 hover:shadow-xl">

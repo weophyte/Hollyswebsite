@@ -99,20 +99,6 @@ export default function Home() {
           </Button>
         </div>
       </section>
-      
-      <section className="bg-accent/30 py-16 sm:py-24">
-        <div className="container px-4 text-center">
-          <Leaf className="mx-auto mb-4 h-10 w-10 text-primary" />
-          <h2 className="mb-4 text-3xl font-bold text-primary md:text-4xl">Join Our Wellness Community</h2>
-          <p className="mx-auto mb-8 max-w-2xl text-lg text-foreground/80">
-            Sign up for our newsletter to receive wellness tips, class updates, and herbal recipes straight to your inbox.
-          </p>
-          <form className="mx-auto flex max-w-md gap-2">
-            <Input type="email" placeholder="Enter your email" className="flex-grow bg-background/80" />
-            <Button type="submit">Subscribe</Button>
-          </form>
-        </div>
-      </section>
     </div>
   );
 }
