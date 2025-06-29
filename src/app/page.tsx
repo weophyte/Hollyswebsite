@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -29,23 +30,11 @@ const services = [
 export default function Home() {
   return (
     <div className="flex flex-col">
-      <section className="relative h-[60vh] min-h-[400px] w-full bg-cover bg-center">
-        <Image 
-          src="https://source.unsplash.com/1600x900/?natural,herbs" 
-          alt="Natural herbs and flowers" 
-          fill
-          objectFit="cover" 
-          className="z-0"
-          data-ai-hint="natural herbs"
-          priority
-        />
-        <div className="absolute inset-0 bg-background/60 backdrop-blur-sm" />
-        <div className="relative z-10 flex h-full items-center justify-center">
-          <div className="container px-4 text-center">
-            <h1 className="text-4xl font-bold leading-tight tracking-tight text-primary md:text-5xl lg:text-6xl">
-              “Empowering natural healing through herbs, food, and the wisdom of the body.”
-            </h1>
-          </div>
+      <section className="bg-secondary py-20 sm:py-28">
+        <div className="container px-4 text-center">
+          <h1 className="text-4xl font-bold leading-tight tracking-tight text-primary md:text-5xl lg:text-6xl">
+            “Empowering natural healing through herbs, food, and the wisdom of the body.”
+          </h1>
         </div>
       </section>
 
