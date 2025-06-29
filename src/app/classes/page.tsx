@@ -8,7 +8,7 @@ import { Users, Calendar } from 'lucide-react';
 
 const ClassCard = ({ classInfo }: { classInfo: WellnessClass }) => (
   <Card className="flex flex-col overflow-hidden transition-shadow duration-300 hover:shadow-xl">
-    <div className="aspect-w-16 aspect-h-9">
+    <div className="aspect-[16/9]">
       <Image
         src={classInfo.image}
         alt={classInfo.title}

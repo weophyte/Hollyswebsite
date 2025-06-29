@@ -9,7 +9,7 @@ import { ArrowRight } from 'lucide-react';
 const BlogCard = ({ post }: { post: BlogPost }) => (
   <Card className="flex flex-col overflow-hidden transition-shadow duration-300 hover:shadow-xl">
     <Link href={`/blog/${post.slug}`} className="block">
-      <div className="aspect-w-16 aspect-h-9">
+      <div className="aspect-[16/9]">
         <Image
           src={post.image}
           alt={post.title}
