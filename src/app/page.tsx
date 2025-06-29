@@ -33,7 +33,7 @@ export default function Home() {
         <Image 
           src="https://placehold.co/1600x900.png" 
           alt="Natural herbs and flowers" 
-          layout="fill" 
+          fill
           objectFit="cover" 
           className="z-0"
           data-ai-hint="natural herbs"
@@ -61,7 +61,7 @@ export default function Home() {
                 <Link href="/about">Meet Holly <ArrowRight className="ml-2 h-5 w-5" /></Link>
               </Button>
             </div>
-            <div className="order-1 h-80 w-full overflow-hidden rounded-lg shadow-lg md:order-2 md:h-96">
+            <div className="relative order-1 h-80 w-full overflow-hidden rounded-lg shadow-lg md:order-2 md:h-96">
               <Image
                 src="https://placehold.co/600x800.png"
                 alt="Natural greenery or a portrait of Holly"
@@ -70,6 +70,16 @@ export default function Home() {
                 className="h-full w-full object-cover"
                 data-ai-hint="natural greenery"
               />
+              <div className="absolute inset-0 flex items-center justify-center bg-black/20">
+                <div className="relative h-32 w-4/5">
+                  <Image
+                    src="/logo.png"
+                    alt="The Island Apothecary Logo"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
