@@ -14,18 +14,8 @@ export function Footer() {
             </p>
           </div>
           <div className="md:col-span-2">
-            <div className="grid gap-8 sm:grid-cols-2">
-              <div>
-                <h3 className="text-lg font-headline font-semibold text-primary">Stay Connected</h3>
-                <p className="mt-2 text-sm text-foreground/70">
-                  Join our newsletter for updates on classes, new blog posts, and wellness tips.
-                </p>
-                <form className="mt-4 flex gap-2">
-                  <Input type="email" placeholder="Your email address" className="bg-background/70" />
-                  <Button type="submit">Subscribe</Button>
-                </form>
-              </div>
-              <div>
+            <div className="flex justify-start sm:justify-end">
+               <div>
                  <h3 className="text-lg font-headline font-semibold text-primary">Get in Touch</h3>
                  <p className="mt-2 text-sm text-foreground/70">
                     Have a question or want to book a session? Reach out to us.

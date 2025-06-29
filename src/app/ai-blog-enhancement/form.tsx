@@ -10,6 +10,7 @@ import { Label } from "@/components/ui/label";
 import { useEffect } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { Sparkles } from "lucide-react";
+import { Separator } from "@/components/ui/separator";
 
 function SubmitButton() {
   const { pending } = useFormStatus();
@@ -90,9 +91,4 @@ export default function AiBlogEnhancementForm() {
       </CardContent>
     </Card>
   );
-}
-
-// Dummy Separator component to avoid creating a new file for it.
-function Separator() {
-    return <div className="my-4 h-px w-full bg-border" />;
 }

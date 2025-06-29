@@ -20,7 +20,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'the-art-of-herbal-tea-blending',
     title: 'The Art of Herbal Tea Blending for Beginners',
     excerpt: 'Discover the secrets to creating your own delicious and therapeutic herbal tea blends at home. From calming chamomile to invigorating peppermint, we cover the basics.',
-    image: 'https://placehold.co/800x600.png',
+    image: 'https://placehold.co/800x450.png',
     imageHint: 'herbal tea',
     date: 'October 26, 2023',
     author: 'Holly',
@@ -62,7 +62,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'five-essential-wellness-tips',
     title: 'Five Essential Wellness Tips for a Healthier You',
     excerpt: 'In this post, I share five simple yet powerful tips that I\'m learning in my ND program to boost your overall wellness, from mindful eating to the power of nature.',
-    image: 'https://placehold.co/800x600.png',
+    image: 'https://placehold.co/800x450.png',
     imageHint: 'wellness journal',
     date: 'November 15, 2023',
     author: 'Holly',
@@ -98,7 +98,7 @@ export const wellnessClasses: WellnessClass[] = [
     description: 'A supportive class focused on gentle movement, nutrition for longevity, and simple herbal remedies to enhance vitality and well-being during the golden years.',
     targetAudience: 'Seniors',
     date: 'First Tuesday of every month, 10:00 AM',
-    image: 'https://placehold.co/800x600.png',
+    image: 'https://placehold.co/800x450.png',
     imageHint: 'senior yoga'
   },
   {
@@ -106,7 +106,7 @@ export const wellnessClasses: WellnessClass[] = [
     description: 'An interactive workshop for homeschool families to learn about the magic of herbs together. We\'ll make a simple herbal craft and learn about local medicinal plants.',
     targetAudience: 'Homeschool Families',
     date: 'November 18, 2023, 1:00 PM',
-    image: 'https://placehold.co/800x600.png',
+    image: 'https://placehold.co/800x450.png',
     imageHint: 'family nature'
   },
   {
@@ -114,7 +114,7 @@ export const wellnessClasses: WellnessClass[] = [
     description: 'Dive into the art of herbal medicine making in this hands-on class. You\'ll learn the basics of creating your own potent herbal tinctures and go home with your first creation.',
     targetAudience: 'Adults',
     date: 'December 2, 2023, 2:00 PM',
-    image: 'https://placehold.co/800x600.png',
+    image: 'https://placehold.co/800x450.png',
     imageHint: 'herbal tinctures'
   }
 ];
