@@ -7,6 +7,9 @@ import { Toaster } from '@/components/ui/toaster';
 export const metadata: Metadata = {
   title: 'Island Wellness Hub',
   description: 'Empowering natural healing through herbs, food, and the wisdom of the body.',
+  icons: {
+    icon: '/logo.png',
+  },
 };
 
 export default function RootLayout({
