@@ -31,7 +31,7 @@ export default function Home() {
     <div className="flex flex-col">
       <section className="relative h-[60vh] min-h-[400px] w-full bg-cover bg-center">
         <Image 
-          src="https://placehold.co/1600x900.png" 
+          src="https://source.unsplash.com/1600x900/?natural,herbs" 
           alt="Natural herbs and flowers" 
           fill
           objectFit="cover" 
@@ -61,7 +61,7 @@ export default function Home() {
                 <Link href="/about">Meet Holly <ArrowRight className="ml-2 h-5 w-5" /></Link>
               </Button>
             </div>
-            <div className="relative order-1 w-full overflow-hidden rounded-lg shadow-lg md:order-2 aspect-[3/4]">
+            <div className="relative order-1 aspect-[3/4] w-full overflow-hidden rounded-lg shadow-lg md:order-2">
               <Image
                 src="https://placehold.co/600x800.png"
                 alt="Natural greenery or a portrait of Holly"
