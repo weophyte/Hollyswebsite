@@ -1,5 +1,6 @@
 import { wellnessClasses, type WellnessClass } from '@/lib/data';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';

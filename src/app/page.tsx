@@ -26,15 +26,6 @@ const services = [
   },
 ];
 
-const instagramPosts = [
-  { id: 1, alt: 'A cup of herbal tea', hint: 'herbal tea' },
-  { id: 2, alt: 'A person meditating in nature', hint: 'meditation nature' },
-  { id: 3, alt: 'A collection of dried herbs', hint: 'dried herbs' },
-  { id: 4, alt: 'A healthy meal in a bowl', hint: 'healthy food' },
-  { id: 5, alt: 'A person writing in a journal', hint: 'wellness journal' },
-  { id: 6, alt: 'A tranquil forest scene', hint: 'tranquil forest' },
-];
-
 export default function Home() {
   return (
     <div className="flex flex-col">
@@ -106,30 +97,6 @@ export default function Home() {
           <Button asChild variant="link" className="mt-8 text-lg text-primary">
             <Link href="/services">Explore All Services <ArrowRight className="ml-2 h-5 w-5" /></Link>
           </Button>
-        </div>
-      </section>
-
-      <section className="py-16 sm:py-24">
-        <div className="container px-4 text-center">
-          <h2 className="mb-4 text-3xl font-bold text-primary md:text-4xl">Follow Our Journey</h2>
-          <p className="mx-auto mb-12 max-w-2xl text-lg text-foreground/80">
-            Get a glimpse of life at The Island Apothecary on Instagram.
-          </p>
-          <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-6 md:gap-4">
-            {instagramPosts.map((post) => (
-              <div key={post.id} className="group relative aspect-square overflow-hidden rounded-lg">
-                <Image
-                  src={`https://placehold.co/400x400.png`}
-                  alt={post.alt}
-                  width={400}
-                  height={400}
-                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
-                  data-ai-hint={post.hint}
-                />
-                <div className="absolute inset-0 bg-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-              </div>
-            ))}
-          </div>
         </div>
       </section>
       
