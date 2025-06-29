@@ -3,12 +3,11 @@ import Image from 'next/image';
 
 export function Logo() {
   return (
-    <Link href="/" className="flex items-center gap-2 text-primary transition-opacity hover:opacity-80">
+    <Link href="/" className="relative block h-12 w-44 text-primary transition-opacity hover:opacity-80">
       <Image
         src="/logo.png"
         alt="The Island Apothecary Logo"
-        width={180}
-        height={50}
+        fill
         className="object-contain"
         priority
       />
