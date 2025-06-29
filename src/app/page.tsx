@@ -61,7 +61,7 @@ export default function Home() {
                 <Link href="/about">Meet Holly <ArrowRight className="ml-2 h-5 w-5" /></Link>
               </Button>
             </div>
-            <div className="relative order-1 h-80 w-full overflow-hidden rounded-lg shadow-lg md:order-2 md:h-96">
+            <div className="relative order-1 w-full overflow-hidden rounded-lg shadow-lg md:order-2 aspect-[3/4]">
               <Image
                 src="https://placehold.co/600x800.png"
                 alt="Natural greenery or a portrait of Holly"
