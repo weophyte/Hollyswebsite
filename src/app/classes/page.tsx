@@ -49,8 +49,8 @@ export default function ClassesPage() {
         </div>
 
         <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {wellnessClasses.map((classInfo, index) => (
-            <ClassCard key={index} classInfo={classInfo} />
+          {wellnessClasses.map((classInfo) => (
+            <ClassCard key={classInfo.title} classInfo={classInfo} />
           ))}
         </div>
       </div>

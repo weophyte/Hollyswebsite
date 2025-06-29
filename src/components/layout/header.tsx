@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
-import { Menu, X, BotMessageSquare } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Logo } from '@/components/logo';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
@@ -46,11 +46,6 @@ export function Header() {
           {navLinks.map((link) => (
             <NavLink key={link.href} {...link} />
           ))}
-          <Button asChild variant="outline" size="sm">
-            <Link href="/ai-blog-enhancement">
-              <BotMessageSquare className="mr-2 h-4 w-4" /> AI Tool
-            </Link>
-          </Button>
         </nav>
         <div className="md:hidden">
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
@@ -75,11 +70,6 @@ export function Header() {
                   {navLinks.map((link) => (
                     <NavLink key={link.href} {...link} />
                   ))}
-                   <Button asChild variant="outline" className="w-full">
-                      <Link href="/ai-blog-enhancement">
-                        <BotMessageSquare className="mr-2 h-4 w-4" /> AI Tool
-                      </Link>
-                    </Button>
                 </nav>
               </div>
             </SheetContent>
