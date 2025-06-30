@@ -1,6 +1,6 @@
 'use client';
 
-import { useForm, ValidationError } from '@formspree/react';
+import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -10,6 +10,9 @@ import { MessageSquare, CheckCircle } from 'lucide-react';
 
 export function ContactForm() {
   const formId = process.env.NEXT_PUBLIC_FORM;
+  const [submitting, setSubmitting] = useState(false);
+  const [succeeded, setSucceeded] = useState(false);
+  const [errors, setErrors] = useState<string | null>(null);
 
   if (!formId) {
     return (
@@ -24,9 +27,43 @@ export function ContactForm() {
     );
   }
 
-  const [state, handleSubmit] = useForm(formId);
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setSubmitting(true);
+    setErrors(null);
 
-  if (state.succeeded) {
+    const formData = new FormData(event.currentTarget);
+    const endpoint = `https://formspree.io/f/${formId}`;
+
+    try {
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        setSucceeded(true);
+      } else {
+        const data = await response.json();
+        if (data.hasOwnProperty('errors')) {
+          setErrors(data.errors.map((error: any) => error.message).join(", "));
+        } else {
+          setErrors("An unknown error occurred.");
+        }
+        setSucceeded(false);
+      }
+    } catch (error) {
+      setErrors("An error occurred while submitting the form.");
+      setSucceeded(false);
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
+  if (succeeded) {
     return (
       <Card>
         <CardContent className="flex min-h-[480px] flex-col items-center justify-center p-10 text-center">
@@ -61,7 +98,6 @@ export function ContactForm() {
           <div className="space-y-2">
             <Label htmlFor="email">Email Address</Label>
             <Input id="email" name="email" type="email" placeholder="your.email@example.com" required />
-            <ValidationError prefix="Email" field="email" errors={state.errors} className="text-sm font-medium text-destructive" />
           </div>
           <div className="space-y-2">
             <Label htmlFor="subject">Subject</Label>
@@ -70,10 +106,12 @@ export function ContactForm() {
           <div className="space-y-2">
             <Label htmlFor="message">Message</Label>
             <Textarea id="message" name="message" placeholder="Tell me how I can help..." rows={6} required />
-            <ValidationError prefix="Message" field="message" errors={state.errors} className="text-sm font-medium text-destructive" />
           </div>
-          <Button type="submit" size="lg" className="w-full" disabled={state.submitting}>
-            {state.submitting ? 'Sending...' : 'Send Message'}
+          {errors && (
+             <p className="text-sm font-medium text-destructive">{errors}</p>
+          )}
+          <Button type="submit" size="lg" className="w-full" disabled={submitting}>
+            {submitting ? 'Sending...' : 'Send Message'}
           </Button>
         </form>
       </CardContent>
