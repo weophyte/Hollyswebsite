@@ -18,7 +18,7 @@ export function ContactForm() {
           <CardTitle>Contact Form Unavailable</CardTitle>
         </CardHeader>
         <CardContent>
-          <p>The contact form is currently not configured. Please contact the site administrator.</p>
+          <p>The contact form is currently not configured. This is usually due to a missing environment variable on the server. Please contact the site administrator.</p>
         </CardContent>
       </Card>
     );
