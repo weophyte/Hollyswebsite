@@ -14,6 +14,8 @@ export function ContactForm() {
   const [succeeded, setSucceeded] = useState(false);
   const [errors, setErrors] = useState<string | null>(null);
 
+  const endpoint = formId ? `https://formspree.io/f/${formId}` : '';
+
   if (!formId) {
     return (
       <Card>
@@ -33,7 +35,6 @@ export function ContactForm() {
     setErrors(null);
 
     const formData = new FormData(event.currentTarget);
-    const endpoint = `https://formspree.io/f/${formId}`;
 
     try {
       const response = await fetch(endpoint, {
@@ -88,6 +89,8 @@ export function ContactForm() {
       </CardHeader>
       <CardContent>
         <form
+          action={endpoint}
+          method="POST"
           onSubmit={handleSubmit}
           className="space-y-6"
         >
