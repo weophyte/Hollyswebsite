@@ -1,9 +1,7 @@
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
-import { Mail, MessageSquare, HandHeart } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Mail, HandHeart } from 'lucide-react';
+import { ContactForm } from './contact-form';
 
 export default function ContactPage() {
   return (
@@ -18,40 +16,7 @@ export default function ContactPage() {
         </div>
 
         <div className="mt-16 grid grid-cols-1 gap-16 lg:grid-cols-2">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-3 text-3xl">
-                <MessageSquare className="h-8 w-8 text-primary" />
-                Send a Message
-              </CardTitle>
-              <CardDescription>
-                Fill out the form below and I'll get back to you as soon as possible.
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <form className="space-y-6">
-                <div className="space-y-2">
-                  <Label htmlFor="name">Full Name</Label>
-                  <Input id="name" placeholder="Your Name" />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="email">Email Address</Label>
-                  <Input id="email" type="email" placeholder="your.email@example.com" />
-                </div>
-                 <div className="space-y-2">
-                  <Label htmlFor="subject">Subject</Label>
-                  <Input id="subject" placeholder="Booking Inquiry, Question, etc." />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="message">Message</Label>
-                  <Textarea id="message" placeholder="Tell me how I can help..." rows={6} />
-                </div>
-                <Button type="submit" size="lg" className="w-full">
-                  Send Message
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
+          <ContactForm />
           
           <div className="flex flex-col space-y-8">
              <Card>
