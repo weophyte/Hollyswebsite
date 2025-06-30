@@ -31,7 +31,7 @@ export default function Home() {
       <section className="bg-secondary py-20 sm:py-28">
         <div className="container px-4 text-center">
           <h1 className="text-4xl font-bold leading-tight tracking-tight text-primary md:text-5xl lg:text-6xl">
-            Supporting your journey to vibrant, natural wellness.
+            Join me on my naturopathic learning journey—together we’ll explore vibrant, natural wellness.
           </h1>
         </div>
       </section>
