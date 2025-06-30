@@ -9,7 +9,7 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
           <div className="md:col-span-1">
             <div className="sticky top-24">
-              <div className="aspect-w-3 aspect-h-4 overflow-hidden rounded-lg shadow-lg">
+              <div className="aspect-[3/4] overflow-hidden rounded-lg shadow-lg">
                 <Image
                   src="https://placehold.co/600x800.png"
                   alt="A portrait of Holly"
@@ -21,7 +21,7 @@ export default function AboutPage() {
               </div>
               <h1 className="mt-6 text-3xl font-bold text-primary">Hi, I’m Holly.</h1>
               <p className="mt-2 text-lg text-foreground/80">
-                I believe in the healing power of nature and empowering you with tools to take charge of your wellness.
+                A student of naturopathic medicine, tea lover, and believer in the body’s natural ability to heal.
               </p>
             </div>
           </div>
@@ -36,10 +36,10 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent className="space-y-4 text-foreground/80">
                 <p>
-                  My journey into naturopathic wellness began with a simple, profound realization: our bodies have an innate wisdom and a remarkable capacity to heal. The modern world often disconnects us from this wisdom, but through nature, we can find our way back.
+                  I created The Island Apothecary as a cozy corner to share what I’m learning, offer gentle guidance, and connect with others exploring natural wellness.
                 </p>
                 <p>
-                  At The Island Apothecary, my goal is to be your guide on this path. I blend traditional herbalism, evidence-based nutrition, and a deep respect for individual needs to create a wellness plan that feels authentic to you. It's not about quick fixes; it's about building a sustainable, joyful, and healthy lifestyle, one step at a time.
+                  My journey began with a simple, profound realization: our bodies have an innate wisdom and a remarkable capacity to heal. The modern world often disconnects us from this wisdom, but through nature, we can find our way back. It's not about quick fixes; it's about building a sustainable, joyful, and healthy lifestyle, one step at a time.
                 </p>
               </CardContent>
             </Card>

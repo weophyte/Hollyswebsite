@@ -1,28 +1,26 @@
-
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { ArrowRight, Heart, Leaf, NotebookText, Sprout } from 'lucide-react';
+import { ArrowRight, Leaf, NotebookText, Moon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const services = [
   {
     icon: <NotebookText className="h-8 w-8 text-primary" />,
-    title: 'pH Write-ups',
-    description: 'Detailed analysis to help you understand and balance your body\'s acidity.',
+    title: 'pH Wellness Write-Up',
+    description: 'Personalized reflection based on your urine pH test.',
     href: '/services',
   },
   {
-    icon: <Sprout className="h-8 w-8 text-primary" />,
-    title: 'Herbal Education',
-    description: 'Learn the art of using teas and tinctures for natural wellness.',
+    icon: <Moon className="h-8 w-8 text-primary" />,
+    title: 'Fasting Support',
+    description: 'Gentle guidance and resources if you’re curious about the healing power of fasting.',
     href: '/services',
   },
   {
-    icon: <Heart className="h-8 w-8 text-primary" />,
-    title: 'Personalized Nutrition',
-    description: 'Custom diet plans, including the Blood Type Diet, tailored to your needs.',
+    icon: <Leaf className="h-8 w-8 text-primary" />,
+    title: 'Tea Talk & Herbs',
+    description: 'Let’s create a custom herbal tea blend or explore how herbs can support your body.',
     href: '/services',
   },
 ];
@@ -33,7 +31,7 @@ export default function Home() {
       <section className="bg-secondary py-20 sm:py-28">
         <div className="container px-4 text-center">
           <h1 className="text-4xl font-bold leading-tight tracking-tight text-primary md:text-5xl lg:text-6xl">
-            “Empowering natural healing through herbs, food, and the wisdom of the body.”
+            Supporting your journey to vibrant, natural wellness.
           </h1>
         </div>
       </section>
@@ -44,7 +42,7 @@ export default function Home() {
             <div className="order-2 md:order-1">
               <h2 className="mb-4 text-3xl font-bold text-primary md:text-4xl">Welcome to The Island Apothecary</h2>
               <p className="mb-6 text-lg text-foreground/80">
-                Discover a path to wellness that honors the intricate connection between mind, body, and nature. Here, we believe in nurturing your health with gentle, effective, and natural solutions. Let's embark on this healing journey together.
+                Hi, I’m Holly—a student of naturopathic medicine, tea lover, and believer in the body’s natural ability to heal. I created The Island Apothecary as a cozy corner to share what I’m learning, offer gentle guidance, and connect with others exploring natural wellness.
               </p>
               <Button asChild size="lg">
                 <Link href="/about">Meet Holly <ArrowRight className="ml-2 h-5 w-5" /></Link>
