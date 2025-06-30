@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { GraduationCap, Leaf, HeartHandshake } from 'lucide-react';
+import { GraduationCap, Leaf } from 'lucide-react';
 
 export default function AboutPage() {
   return (
@@ -31,29 +31,15 @@ export default function AboutPage() {
               <CardHeader>
                 <div className="flex items-center gap-3">
                   <Leaf className="h-8 w-8 text-primary" />
-                  <CardTitle className="text-3xl">My Philosophy</CardTitle>
+                  <CardTitle className="text-3xl">My Journey</CardTitle>
                 </div>
               </CardHeader>
               <CardContent className="space-y-4 text-foreground/80">
                 <p>
-                  I created The Island Apothecary as a cozy corner to share what I’m learning, offer gentle guidance, and connect with others exploring natural wellness.
+                  I’m a naturopathic student and mom passionate about sharing what I learn through experience, nature, and study. This space is a reflection of that journey. You won’t find rigid protocols here—just gentle support, intuitive wellness, and space to grow.
                 </p>
                 <p>
-                  My journey began with a simple, profound realization: our bodies have an innate wisdom and a remarkable capacity to heal. The modern world often disconnects us from this wisdom, but through nature, we can find our way back. It's not about quick fixes; it's about building a sustainable, joyful, and healthy lifestyle, one step at a time.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="mt-8">
-              <CardHeader>
-                <div className="flex items-center gap-3">
-                  <HeartHandshake className="h-8 w-8 text-primary" />
-                  <CardTitle className="text-3xl">Our Mission</CardTitle>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-foreground/80">
-                  Our mission is to empower you with the knowledge and tools for natural healing. We strive to create a supportive, educational space where you can learn about your body, connect with the healing properties of herbs and food, and feel confident in your ability to nurture your own well-being and that of your family.
+                  My path began with a simple, profound realization: our bodies have an innate wisdom and a remarkable capacity to heal. I created The Island Apothecary as a cozy corner to share what I’m learning, offer gentle guidance, and connect with others exploring natural wellness.
                 </p>
               </CardContent>
             </Card>

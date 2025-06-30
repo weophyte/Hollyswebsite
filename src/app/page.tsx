@@ -8,19 +8,19 @@ const services = [
   {
     icon: <NotebookText className="h-8 w-8 text-primary" />,
     title: 'pH Wellness Write-Up',
-    description: 'Personalized reflection based on your urine pH test.',
+    description: 'A personalized overview of your Brixometer readings, saliva & urine pH test results, with gentle, lifestyle suggestions.',
     href: '/services',
   },
   {
     icon: <Moon className="h-8 w-8 text-primary" />,
     title: 'Fasting Support',
-    description: 'Gentle guidance and resources if you’re curious about the healing power of fasting.',
+    description: 'Curious about fasting? I’ll guide you with what I’ve learned and share resources to support your body’s natural rhythms.',
     href: '/services',
   },
   {
     icon: <Leaf className="h-8 w-8 text-primary" />,
     title: 'Tea Talk & Herbs',
-    description: 'Let’s create a custom herbal tea blend or explore how herbs can support your body.',
+    description: 'Let’s explore herbal tea blends together—simple, intuitive herbalism for daily balance.',
     href: '/services',
   },
 ];
@@ -42,7 +42,7 @@ export default function Home() {
             <div className="order-2 md:order-1">
               <h2 className="mb-4 text-3xl font-bold text-primary md:text-4xl">Welcome to The Island Apothecary</h2>
               <p className="mb-6 text-lg text-foreground/80">
-                Hi, I’m Holly—a student of naturopathic medicine, tea lover, and believer in the body’s natural ability to heal. I created The Island Apothecary as a cozy corner to share what I’m learning, offer gentle guidance, and connect with others exploring natural wellness.
+                Hi, I’m Holly—a student of naturopathic medicine, tea lover, and believer in the body’s natural ability to heal. I created The Island Apothecary as a cozy space to share what I’m learning, offer gentle wellness reflections, and connect with others who are exploring natural healing.
               </p>
               <Button asChild size="lg">
                 <Link href="/about">Meet Holly <ArrowRight className="ml-2 h-5 w-5" /></Link>
@@ -74,7 +74,7 @@ export default function Home() {
 
       <section className="bg-white/50 py-16 sm:py-24">
         <div className="container px-4 text-center">
-          <h2 className="mb-4 text-3xl font-bold text-primary md:text-4xl">Our Approach to Wellness</h2>
+          <h2 className="mb-4 text-3xl font-bold text-primary md:text-4xl">Wellness Sessions</h2>
           <p className="mx-auto mb-12 max-w-2xl text-lg text-foreground/80">
             We offer a range of services designed to support your unique health goals.
           </p>
@@ -92,7 +92,7 @@ export default function Home() {
             ))}
           </div>
           <Button asChild variant="link" className="mt-8 text-lg text-primary">
-            <Link href="/services">Explore All Services <ArrowRight className="ml-2 h-5 w-5" /></Link>
+            <Link href="/services">Explore All Offerings <ArrowRight className="ml-2 h-5 w-5" /></Link>
           </Button>
         </div>
       </section>
